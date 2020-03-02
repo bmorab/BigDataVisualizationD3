@@ -1,0 +1,27 @@
+.rectwarning  {
+    fill: red !important; 
+  }
+
+  svg {
+    border: solid 1px blue;
+  
+  }
+  
+  svg:nth-child(1) {
+    float: left;
+  }
+  
+  
+  .text {
+    font-size: 15px;
+    fill: blue;
+  }
+ 
+  .tick text {
+    fill: red;
+  }
+
+  #map {
+    width: 800px;
+    height: 400px;
+    }
