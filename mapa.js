@@ -90,34 +90,11 @@ function drawMap(city) {
     //.domain([0,MaxAvgPrice]);
 
     // creates the legend
-    console.log("The range is: " + colorScale.range);
+    console.log("The domain is: " + colorScale.range);
 
        //creates the legend for the heatmap   
    
-    const linear = d3.scaleLinear()
-       .domain([0,MaxAvgPrice])
-       //.range(["#582406", "#F9C9AD"])
-       .range(['white', 'orange'])
-       ;
- 
-     d3.select("svg")
-     svg.append("g")
-       .attr("class", "legendLinear")
-       .attr("transform", "translate(5,30)");
- 
-     const legendLinear = d3.legendColor()
-       .labelFormat(d3.format(".0f"))
-       .shapeWidth(35)
-       .shapeHeight(30)
-       .cells(5)
-       .orient('horizontal')
-       .scale(linear);
- 
-     svg.select(".legendLinear")
-       .call(legendLinear);
-
-
-        /* 
+        
     const legendScale = d3.legendColor()
         .scale(colorScale)
         .shapePadding(1)
@@ -137,5 +114,6 @@ function drawMap(city) {
         .attr("transform", "translate(5, 30)")
         .call(legendScale);
  
-    */
+    
 }
+
